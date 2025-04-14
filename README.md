@@ -1,6 +1,7 @@
 # OOP-Assignment
 
-# Base class: Smartphone
+ Base class: Smartphone
+
 class Smartphone:
     def __init__(self, brand, model, battery_percentage, operating_system):
         self.brand = brand  # Brand of the smartphone
