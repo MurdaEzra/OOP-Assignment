@@ -31,6 +31,7 @@ class Smartphone:
         return f"Smartphone {self.brand} {self.model} with {self.operating_system}, Battery: {self.battery_percentage}%"
 
 # Subclass: GamingPhone (inherits from Smartphone)
+
 class GamingPhone(Smartphone):
     def __init__(self, brand, model, battery_percentage, operating_system, gaming_mode=False):
         # Calling the constructor of the superclass (Smartphone)
@@ -53,6 +54,7 @@ class GamingPhone(Smartphone):
 
 
 # Creating an object for Murda smartphone (Smartphone class)
+
 murda_phone = Smartphone("Murda", "X1000", 50, "Android")
 
 # Creating an object for a GamingPhone
