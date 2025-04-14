@@ -1,0 +1,34 @@
+# Base class: Vehicle
+class Vehicle:
+    def move(self):
+        pass  # This will be overridden in subclasses
+
+# Subclass: Car
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+# Subclass: Plane
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+# Subclass: Bike
+class Bike(Vehicle):
+    def move(self):
+        print("Pedaling 🚴")
+
+# Creating objects for each vehicle
+car = Car()
+plane = Plane()
+bike = Bike()
+
+# Demonstrating polymorphism
+print("Car action:")
+car.move()  # Calls Car's move method
+
+print("\nPlane action:")
+plane.move()  # Calls Plane's move method
+
+print("\nBike action:")
+bike.move()  # Calls Bike's move method
